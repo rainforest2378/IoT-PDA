@@ -54,7 +54,7 @@ def build_source_cnn():
     return target_cnn
   
   
-def build_domain_classifier:
+def build_domain_classifier():
     length=64
     input_layer = layers.Input(name='input', shape=(length, ))
     d = layers.Dense(1, activation='sigmoid')(input_layer,name='classifier')
@@ -62,7 +62,7 @@ def build_domain_classifier:
     return discriminator
   
   
-def build_domain_classifier_0:
+def build_domain_classifier_0():
     length=64
     input_layer = layers.Input(name='input', shape=(length, ))
     x = layers.Dense(10, activation='relu')(x,name='dense')
