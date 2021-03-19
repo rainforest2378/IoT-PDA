@@ -26,7 +26,7 @@ def build_source_cnn():
     
     source_feature=Model(inputs=input_layer,outputs=bottle1)
     
-    return source_cnn
+    return source_cnn,source_feature
 
   
 def build_source_cnn():
@@ -51,7 +51,7 @@ def build_source_cnn():
     
     target_feature=Model(inputs=input_layer,outputs=bottle1)
     
-    return target_cnn
+    return target_cnn,target_feature
   
   
 def build_domain_classifier():
